@@ -51,7 +51,7 @@
                 <td><?php echo number_format($budget_pj,2   , '.'  , ','    ); ?></td>
                 <td><?php echo number_format($budget_pj,2   , '.'  , ','    ); ?></td>
                 
-                <td><?php echo $date; ?></td>
+                <td><?php echo $date_pj; ?></td>
                 <td><?php echo $date_fillter; ?></td>
         </tr>
         <?php  } ?>
@@ -67,8 +67,10 @@
     
 <script>
                    function myFunction() {
-			            window.open("form_insert/form_isert_reve.php","50%","50%","");
+			            window.open("project/form/from_insert_project.php","50%","50%","");
 					      }</script>
+<div class="bb">
 
                     <button  class="w3-button w3-circle w3-black " onclick="myFunction()">+</button>   
-                    <button  class="w3-button w3-circle w3-teal" onclick="myFunction()">+</button>
+                    <button  class="w3-button w3-circle w3-teal " onclick="myFunction()">+</button>
+</div>

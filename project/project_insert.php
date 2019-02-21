@@ -1,10 +1,13 @@
 <?php
 include '../cn_db.php';
 
-$name_rn= $_POST['namelist'];
-$values_rn= $_POST['amount'];
-$category= $_POST['category'];
-$date_rn= $_POST['date_time'];
+$doc_no= $_POST['doc_no'];
+$list= $_POST['list'];
+$amountbud= $_POST['amountbud'];
+$upfont= $_POST['upfont'];
+$date= $_POST['date'];
+$date_filter= $_POST['date_filter'];
+
 
 // $ext = pathinfo(basename($_FILES['pro_reve']['name']), PATHINFO_EXTENSION);
 // $new_pdf_name = 'pro_'.uniqid().".".$ext;
@@ -30,12 +33,14 @@ $date_rn= $_POST['date_time'];
 // $pro_reve = $new_pdf_name;
 
 //insert ข้อมูล
-$sql1="INSERT INTO revenue( name_rn,values_rn, category_rn, date_rn) VALUES (:p1,:p2,:p3 ,:p4)";
+$sql1="INSERT INTO project( do_no_pj,list_pj, budget_pj, upfont, date_pj, date_fillter) VALUES (:p1,:p2,:p3 ,:p4,:p5,:p6)";
 $stm=$con->prepare($sql1);
-$stm->bindParam(':p1',$name_rn);
-$stm->bindParam(':p2',$values_rn);
-$stm->bindParam(':p3',$category);
-$stm->bindParam(':p4',$date_rn);
+$stm->bindParam(':p1',$doc_no);
+$stm->bindParam(':p2',$list);
+$stm->bindParam(':p3',$amountbud);
+$stm->bindParam(':p4',$upfont);
+$stm->bindParam(':p5',$date);
+$stm->bindParam(':p6',$date_filter);
 
 
 

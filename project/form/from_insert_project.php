@@ -32,7 +32,7 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form class="contact100-form validate-form" action="../project_insert.php" id="formUser" method="post" enctype="multipart/form-data">
 				<span class="contact100-form-title">
 				ADD PROJECT
 				</span>
@@ -45,7 +45,7 @@
 				
 				
 
-				<label class="label-input100" for="email">List Project *</label>
+				<label class="label-input100" >List Project *</label>
 				<div class="wrap-input100 validate-input">
 					<input id="email" class="input100" type="text" name="list" placeholder="List Project">
 					<span class="focus-input100"></span>
@@ -66,7 +66,7 @@
 
 				<label class="label-input100" for="first-name">Date * &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;date filter *</label>
 				<div class="wrap-input100 rs1 validate-input">
-				<input type="date" id="start" name="trip-start"
+				<input type="date" id="start" name="date"
 					value="DATE TIME"
 					>
 
@@ -74,7 +74,7 @@
 				</div>
 			
 				<div class="wrap-input100 rs1 validate-input">
-				<input type="date"  name="date_time" data-validate="Please Type Your Date">
+				<input type="date"  name="date_filter" data-validate="Please Type Your Date">
 					<span class="focus-input100"></span>
 				</div>
 
