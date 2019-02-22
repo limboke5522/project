@@ -46,7 +46,7 @@ $stm->bindParam(':p6',$date_filter);
 
 try{
     $stm->execute();
-    
+    echo "<script>window.opener.location.reload()</script>";
     echo "<script>alert('บันทึกข้อมูลเรียบร้อยแล้ว');</script>";
 
     echo "<script>window.close();</script>";

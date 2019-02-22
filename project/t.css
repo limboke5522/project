@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
 body {
-  background-color: #d4d4d4;
+  background-color: #e6e6e6;
   font-family: "Roboto", helvetica, arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -35,7 +35,7 @@ div.table-title {
   border-collapse: collapse;
   height: 100%px;
   margin: auto;
-  max-width: 70%;
+  max-width: 80%;
   padding:5px;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -47,9 +47,9 @@ th {
   background:#1b1e24;
   border-bottom:4px solid #9ea7af;
   border-right: 1px solid #343a45;
-  font-size:18px;
+  font-size:16px;
   font-weight: 100;
-  padding:24px;
+  padding:18px;
   text-align:left;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   vertical-align:middle;
@@ -66,8 +66,8 @@ th:last-child {
   
 tr {
   border-top: 1px solid #C1C3D1;
-  border-bottom-: 1px solid #C1C3D1;
-  color:#666B85;
+  border-bottom: 1px solid #C1C3D1;
+  /* color:rgb(0, 0, 0); */
   font-size:16px;
   font-weight:normal;
   text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
@@ -75,7 +75,7 @@ tr {
  
 tr:hover td {
   background:#4E5066;
-  color:#FFFFFF;
+  /* color:#FFFFFF; */
   border-top: 1px solid #22262e;
 }
  
@@ -88,11 +88,11 @@ tr:last-child {
 }
  
 tr:nth-child(odd) td {
-  background:#EBEBEB;
+  background:rgb(252, 252, 252);
 }
  
 tr:nth-child(odd):hover td {
-  background:#4E5066;
+  background:rgb(168, 168, 168);
 }
 
 tr:last-child td:first-child {
@@ -109,7 +109,7 @@ td {
   text-align:left;
   vertical-align:middle;
   font-weight:300;
-  font-size:18px;
+  font-size:14px;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
   border-right: 1px solid #C1C3D1;
 }
@@ -146,3 +146,10 @@ td.text-right {
 .bb{
 margin-left:100px; 
 }
+.cc{
+  color: rgb(230, 0, 0);
+}
+.cc1{
+  color: #3300FF;
+}
+

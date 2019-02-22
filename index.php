@@ -18,7 +18,7 @@
 <div>
     <div class="navbar-component">
       <!-- Class `area` is a container -->
-      <div class="navbar area">
+      <div class="navbar area ">
         <!-- Logo -->
         <a href="#" class="brand">Brand</a>
         <!-- List of links -->
@@ -42,9 +42,9 @@
 
                 <div id="mySidepanel" class="sidepanel">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
+                <a href="index.php?module=project&action=project_seletc">PROJECT</a>
+                <a href="index.php?module=budget&action=butget_seletc">BUDGET</a>
+                <a href="index.php?module=test1&action=b">Clients</a>
                 <a href="#">Contact</a>
                 </div>
 
@@ -54,6 +54,8 @@
                 <script>
                 function openNav() {
                 document.getElementById("mySidepanel").style.width = "15%";
+              
+                
                 }
 
                 function closeNav() {
@@ -66,14 +68,22 @@
 <div>
 
 ้<?php
+if(empty($_GET['action'])){ //ถ้าตัวแปร module หรือ action 
+  
+  $action='home';
+}else{
+$module =$_GET['module'];
+$action =$_GET['action']; //เก็บชื่อ files
+}
 
 
-include 'project/project_seletc.php';
+include("$module/$action.php");
+
 
 ?>
+
 </div>
-
-
+</div>
 
 </body>
 </html>

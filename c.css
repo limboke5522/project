@@ -20,6 +20,7 @@ a {
   align-items: stretch;
   margin-left: auto;
   margin-right: auto;
+  
 }
 @media (min-width: 768px) {
   .area {

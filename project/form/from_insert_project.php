@@ -25,6 +25,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
 <!--===============================================================================================-->
 </head>
 <body>
@@ -55,18 +56,18 @@
 
 				<label class="label-input100" for="first-name">Amount Budget * &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Upfont *</label>
 				<div class="wrap-input100 rs1 validate-input">
-					<input id="first-name" class="input100" type="text" name="amountbud" placeholder="Amount Budget">
+					<input id="first-name" class="input100" type="text" name="amountbud" value=0 placeholder="0.00">
 					<span class="focus-input100"></span>
 				</div>
 			
 				<div class="wrap-input100 rs1 validate-input">
-					<input class="input100" type="text" name="upfont" placeholder="Upfont">
+					<input class="input100" type="text" name="upfont" value=0 placeholder="0.00">
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="first-name">Date * &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;date filter *</label>
 				<div class="wrap-input100 rs1 validate-input">
-				<input type="date" id="start" name="date"
+				<input class="input100" type="date" id="start" name="date"
 					value="DATE TIME"
 					>
 
@@ -74,7 +75,7 @@
 				</div>
 			
 				<div class="wrap-input100 rs1 validate-input">
-				<input type="date"  name="date_filter" data-validate="Please Type Your Date">
+				<input class="input100" type="month"  name="date_filter" data-validate="Please Type Your Date">
 					<span class="focus-input100"></span>
 				</div>
 
